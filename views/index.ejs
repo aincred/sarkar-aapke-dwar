@@ -1,0 +1,336 @@
+<%- include("partials/header.ejs") %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government of Uttarakhand</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>/* Example custom animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .fade-in {
+        animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slideInLeft {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.animate-slideInRight {
+    animation: slideInRight 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+
+</style>
+<body class="font-sans antialiased">
+    <!-- Navbar -->
+
+    <!-- Main Banner -->
+    <section class="relative bg-cover bg-center h-96" style="background-image: url('/public/images/hero/1.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto h-full flex items-center justify-center relative z-10">
+            <div class="text-center text-white">
+                <h1 class="text-4xl font-bold">Johar Jharkhand</h1>
+                <p class="mt-4">Sarkar Aapke Dwar</p>
+                <a href="contact" class="mt-8 inline-block bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">Login</a>
+                <a href="contact" class="mt-8 inline-block bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded"> Create Camp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaders of State -->
+       <div class="container mx-auto p-6 bg-white shadow-md rounded-md animate-fadeIn">
+        <div class="flex">
+            <!-- Text Section -->
+            <div class="w-2/3 pr-8 animate-slideInLeft">
+                <h1 class="text-3xl font-bold text-green-700 mb-4">मुख्यमंत्री का संदेश..</h1>
+                <p class="text-2xl font-bold text-gray-900 mb-2">जोहार !</p>
+                <p class="text-xl font-bold text-gray-900 mb-4">मायवर</p>
+                <p class="text-gray-800 leading-relaxed">
+                    एक विशाल पेड़ की तरह विराट है हमारा झारखण्ड। इसी विशाल पेड़ की जड़ों को सींचने का काम कर रही है आपकी झारखण्ड सरकार। झारखण्ड के अमर वीर शहीदों और महान क्रांतिकारियों के सपनों को साकार करते हुए राज्य को सतत विकास की ओर ले जाने का कार्य किया जा रहा है। झारखण्ड के विकास में, यहां के गरीब-गुरबा और शोषित, वंचित को ध्यान में रखा जा रहा है, आदिवासी-मूलवासी के हक-अधिकार का सम्मान किया जा रहा है। झारखण्ड को देश के विकासशील राज्यों के समकक्ष ले जाने के क्रम में यहां के गांव, जंगल, जमीन, सम्पदा, और संस्कृति को भी ध्यान में रखा जा रहा है। राज्य और राज्यवासियों के विकास के लिए अनेक लोक-कल्याणकारी योजनाओं को प्रारंभ किया गया है।
+                </p>
+                <p class="text-gray-800 leading-relaxed">
+                    विगत वर्षो में झारखण्ड सरकार द्वारा झारखण्ड में आपकी योजना, आपकी सरकार, आपके द्वार कार्यक्रम चलाया जा रहा है। जिसमें लाखों आवेदनों का सम्यक निपटारा किया गया। जहां पूर्ववर्ती राज्य के सुदूर इलाकों में कोई पदाधिकारी नहीं जाता था, वहां, अब पदाधिकारियों को योजनाओं की गारंटी लेकर भेजा जा रहा है। इस क्रम में लाखों जरूरतमंद लोगों को सर्वजन पेंशन, सोना सोबरन धोती-साड़ी, हरा राशन कार्ड, मुख्यमंत्री रोजगार सृजन, मुख्यमंत्री पशुधन तथा सब्जीबाड़ी फलों के किशोरी समृद्धि जैसी कई लोक-हितकारी योजनाओं से जोड़ा गया है।
+                </p>
+            </div>
+            <!-- Image Section -->
+            <div class="w-1/3 flex justify-center items-start animate-slideInRight">
+                <img src="/public/images/Hemant_Soren.jpg" alt="Hemant Soren" class="w-full max-w-sm">
+            </div>
+        </div>
+    </div>
+
+    <!-- CM Office Initiatives -->
+    <section class="py-12">
+        <div class="container mx-auto my-8">
+            <h1 class="  text-green-500 text-3xl font-bold mb-4 text-center">SCHEMES</h1>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/5">
+                    <div class="bg-yellow-600 text-white p-4 rounded shadow-lg transition-transform transform hover:scale-105">
+                        <h2 class="text-xl font-semibold">Focused Schemes</h2>
+                        <p class="text-sm mt-2">फोकस योजनाएँ</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/5">
+                    <div class="bg-yellow-600 text-white p-4 rounded shadow-lg transition-transform transform hover:scale-105">
+                        <h2 class="text-xl font-semibold">Beneficiary Oriented Schemes</h2>
+                        <p class="text-sm mt-2">लाभार्थी उन्मुखी योजनाएँ</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/5">
+                    <div class="bg-yellow-600 text-white p-4 rounded shadow-lg transition-transform transform hover:scale-105">
+                        <h2 class="text-xl font-semibold">On-The-Spot Distribution Schemes</h2>
+                        <p class="text-sm mt-2">ऑन-द-स्पॉट वितरण योजनाएँ</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/5">
+                    <div class="bg-yellow-600 text-white p-4 rounded shadow-lg transition-transform transform hover:scale-105">
+                        <h2 class="text-xl font-semibold">On-The-Spot Grievance Redressal Schemes</h2>
+                        <p class="text-sm mt-2">ऑन-द-स्पॉट शिकायत निवारण</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/5">
+                    <div class="bg-yellow-600 text-white p-4 rounded shadow-lg transition-transform transform hover:scale-105">
+                        <h2 class="text-xl font-semibold">Special Camp Schemes</h2>
+                        <p class="text-sm mt-2">विशेष शिविर योजनाएँ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Jharkhand  -->
+    <section class="py-12 bg-gray-100">
+        <section class="fade-in mt-6">
+            <h2 class="text-2xl font-semibold text-green-700">Culture and Traditions</h2>
+            <p class="mt-4 text-gray-700">The culture of Jharkhand is deeply rooted in its tribal traditions, with numerous festivals, dance forms, and rituals that reflect the state's vibrant heritage. Some of the major festivals include Sarhul, Karma, and Sohrai.</p>
+          </section>
+      
+          <section class="fade-in mt-6">
+            <h2 class="text-2xl font-semibold text-green-700">Major Attractions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+              <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="/public/images/hero/place/A.jpg" alt="Netarhat" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-lg font-semibold mt-4">Netarhat</h3>
+                <p class="mt-2 text-gray-600">Known as the 'Queen of Chotanagpur,' Netarhat offers breathtaking sunrise and sunset views.</p>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="/public/images/hero/place/b.jpg" alt="Betla National Park" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-lg font-semibold mt-4">Betla National Park</h3>
+                <p class="mt-2 text-gray-600">A popular wildlife sanctuary home to elephants, tigers, and a variety of flora and fauna.</p>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="/public/images/hero/place/c.jpg" alt="Ranchi" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-lg font-semibold mt-4">Ranchi</h3>
+                <p class="mt-2 text-gray-600">The capital city, known for its waterfalls, temples, and as the hometown of cricketer MS Dhoni.</p>
+              </div>
+            </div>
+          </section>
+    </section>
+
+    <!-- DEPARTMENT-WISE SCHEMES -->
+    <section class="py-12 bg-gray-100">
+    <div class="container mx-auto my-8 p-4">
+        <h1 class="text-3xl font-bold mb-6 text-center">DEPARTMENT-WISE SCHEMES</h1>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <!-- Department 1 -->
+            <div class="p-4">
+                <button onclick="toggleSchemes('dept-1')" class="w-full bg-green-600 text-white text-left py-3 px-4 rounded-t-lg focus:outline-none">
+                    <div class="flex justify-between items-center">
+                        <span>1. Department of Agriculture, Animal Husbandry & Co-operative (कृषि, पशुपालन एवं सहकारिता विभाग)</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" id="icon-dept-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                </button>
+                <div id="schemes-dept-1" class="max-h-0 overflow-hidden transition-max-height duration-500 bg-gray-100">
+                    <ul class="p-4">
+                        <li class="mb-2">Kisan Credit Card Yojna (KCC) (किसान क्रेडिट कार्ड योजना (के. सी. सी.))</li>
+                        <li>Mukhyamantri Pashudhan Yojana (मुख्यमंत्री पशुधन योजना)</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Department 2 -->
+            <div class="p-4">
+                <button onclick="toggleSchemes('dept-2')" class="w-full bg-green-600 text-white text-left py-3 px-4 focus:outline-none">
+                    <div class="flex justify-between items-center">
+                        <span>2. Department of Energy (ऊर्जा विभाग)</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" id="icon-dept-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                </button>
+                <div id="schemes-dept-2" class="max-h-0 overflow-hidden transition-max-height duration-500 bg-gray-100">
+                    <ul class="p-4">
+                        <li class="mb-2">Scheme 1</li>
+                        <li>Scheme 2</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Department 3 -->
+            <div class="p-4">
+                <button onclick="toggleSchemes('dept-3')" class="w-full bg-green-600 text-white text-left py-3 px-4 focus:outline-none">
+                    <div class="flex justify-between items-center">
+                        <span>3. Department of Health (स्वास्थ्य विभाग)</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" id="icon-dept-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                </button>
+                <div id="schemes-dept-3" class="max-h-0 overflow-hidden transition-max-height duration-500 bg-gray-100">
+                    <ul class="p-4">
+                        <li class="mb-2">Ayushman Bharat Yojana (आयुष्मान भारत योजना)</li>
+                        <li>National Health Mission (राष्ट्रीय स्वास्थ्य मिशन)</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Department 4 -->
+            <div class="p-4">
+                <button onclick="toggleSchemes('dept-4')" class="w-full bg-green-600 text-white text-left py-3 px-4 focus:outline-none">
+                    <div class="flex justify-between items-center">
+                        <span>4. Department of Education (शिक्षा विभाग)</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" id="icon-dept-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                </button>
+                <div id="schemes-dept-4" class="max-h-0 overflow-hidden transition-max-height duration-500 bg-gray-100">
+                    <ul class="p-4">
+                        <li class="mb-2">Mid-Day Meal Scheme (मध्याह्न भोजन योजना)</li>
+                        <li>Right to Education Act (शिक्षा का अधिकार अधिनियम)</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Department 5 -->
+            <div class="p-4">
+                <button onclick="toggleSchemes('dept-5')" class="w-full bg-green-600 text-white text-left py-3 px-4 focus:outline-none">
+                    <div class="flex justify-between items-center">
+                        <span>5. Department of Rural Development (ग्रामीण विकास विभाग)</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" id="icon-dept-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                </button>
+                <div id="schemes-dept-5" class="max-h-0 overflow-hidden transition-max-height duration-500 bg-gray-100">
+                    <ul class="p-4">
+                        <li class="mb-2">Pradhan Mantri Awas Yojana (प्रधानमंत्री आवास योजना)</li>
+                        <li>MNREGA (मनरेगा)</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Department 6 -->
+            <div class="p-4">
+                <button onclick="toggleSchemes('dept-6')" class="w-full bg-green-600 text-white text-left py-3 px-4 focus:outline-none">
+                    <div class="flex justify-between items-center">
+                        <span>6. Department of Industries (उद्योग विभाग)</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" id="icon-dept-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                </button>
+                <div id="schemes-dept-6" class="max-h-0 overflow-hidden transition-max-height duration-500 bg-gray-100">
+                    <ul class="p-4">
+                        <li class="mb-2">Start-up India (स्टार्ट-अप इंडिया)</li>
+                        <li>Make in India (मेक इन इंडिया)</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Department 7 -->
+            <div class="p-4">
+                <button onclick="toggleSchemes('dept-7')" class="w-full bg-green-600 text-white text-left py-3 px-4 rounded-b-lg focus:outline-none">
+                    <div class="flex justify-between items-center">
+                        <span>7. Department of Social Welfare (सामाजिक कल्याण विभाग)</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" id="icon-dept-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                </button>
+                <div id="schemes-dept-7" class="max-h-0 overflow-hidden transition-max-height duration-500 bg-gray-100">
+                    <ul class="p-4">
+                        <li class="mb-2">Old Age Pension Scheme (वृद्धावस्था पेंशन योजना)</li>
+                        <li>Widow Pension Scheme (विधवा पेंशन योजना)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+    <script>
+        function toggleSchemes(id) {
+            const element = document.getElementById(`schemes-${id}`);
+            const isCollapsed = element.classList.contains('h-0');
+            if (isCollapsed) {
+                element.classList.remove('h-0');
+                element.classList.add('h-auto');
+            } else {
+                element.classList.remove('h-auto');
+                element.classList.add('h-0');
+            }
+        }
+
+        function toggleSchemes(dept) {
+            const schemes = document.getElementById(`schemes-${dept}`);
+            const icon = document.getElementById(`icon-${dept}`);
+            if (schemes.classList.contains('max-h-0')) {
+                schemes.classList.remove('max-h-0');
+                schemes.classList.add('max-h-96'); // Adjust max-height based on content
+                icon.classList.add('rotate-180');
+            } else {
+                schemes.classList.remove('max-h-96');
+                schemes.classList.add('max-h-0');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        
+    </script>
+
+</body>
+</html>
+
+
+
+
+  <%- include("partials/footer.ejs") %>

@@ -1,0 +1,58 @@
+<%- include("partials/header.ejs") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<style>
+  body {
+  margin: 0;
+  padding: 0;
+}
+
+.animation-background {
+  background-image: url('/public/images/hero/place/b.jpg');
+  animation: animateBackground 10s infinite alternate;
+}
+
+@keyframes animateBackground {
+  0% {
+    filter: brightness(0.8);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% {
+    filter: brightness(0.8);
+  }
+}
+
+</style>
+<body>
+  <div class="min-h-screen flex items-center justify-center bg-cover bg-center animation-background">
+    <div class="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg max-w-md w-full">
+      <div class="text-center mb-6">
+        <img src="/public/images/logo.png" alt="Logo" class="w-24 mx-auto">
+      </div>
+      <h2 class="text-2xl font-semibold text-center mb-6">Sarkar Aapke Dwar</h2>
+      <form>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700">Email address / User Name</label>
+          <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter email">
+        </div>
+        <div class="mb-6">
+          <label for="password" class="block text-gray-700">Password</label>
+          <input type="password" id="password" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Password">
+        </div>
+        <button type="submit" class="w-full py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js" defer></script>
+</body>
+</html>
+
+<%- include("partials/footer.ejs") %>

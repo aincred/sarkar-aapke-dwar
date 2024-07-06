@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <%- include('partials/header') %>
+<div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold mb-4 flex items-center"> 
+        <img src="/public/images/logo.png" alt="" class="h-10 mr-2"> Camp Registration Form
+    </h1>
+    <form action="/register" method="post" class="space-y-4">
+        <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Name:</label>
+            <input type="text" id="name" name="name" required class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+        </div>
+
+        <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+            <input type="email" id="email" name="email" required class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+        </div>
+
+        <div>
+            <label for="age" class="block text-sm font-medium text-gray-700">Date:</label>
+            <input type="number" id="age" name="age" required class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+        </div>
+
+        <div>
+            <label for="district" class="block text-sm font-medium text-gray-700">District:</label>
+            <select id="district" name="camp" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+                <option value="session1">Ranchi</option>
+                <option value="session2">Bokaro</option>
+                <option value="session3">Lohardaga</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="panchayat" class="block text-sm font-medium text-gray-700">Panchayat:</label>
+            <select id="panchayat" name="camp" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+                <option value="session1">Session 1</option>
+                <option value="session2">Session 2</option>
+                <option value="session3">Session 3</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="block" class="block text-sm font-medium text-gray-700">Block:</label>
+            <select id="block" name="camp" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+                <option value="session1">Session 1</option>
+                <option value="session2">Session 2</option>
+                <option value="session3">Session 3</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" value="Register" class="mt-4 p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 cursor-pointer">
+        </div>
+    </form>
+</div>
+<%- include('partials/footer') %>
+</body>
